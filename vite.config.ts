@@ -7,5 +7,5 @@ export default defineConfig({
   // IMPORTANT: Change this to your repository name if deploying to a project page
   // e.g. base: '/my-repo-name/'
   // If deploying to a custom domain or user page (username.github.io), leave as '/'
-  base: '/',
+  base: '/comp4good/',
 })
