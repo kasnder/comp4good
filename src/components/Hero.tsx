@@ -7,6 +7,13 @@ export const Hero: React.FC = () => {
     <section id="about" className="pt-20 pb-32 bg-gradient-to-b from-slate-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <img 
+              src={`${import.meta.env.BASE_URL}logo-no-text.png`} 
+              alt="Comp4Good" 
+              className="h-32 w-auto" 
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
             {siteData.title}
           </h1>

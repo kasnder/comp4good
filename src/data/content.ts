@@ -1,5 +1,5 @@
 export const siteData = {
-  title: "Computing 4 Good Research Group",
+  title: "Computing 4 Good",
   acronym: "Comp4Good",
   description: "Interdisciplinary research at the intersection of Computer Science and Law, aiming to make technology work for society.",
   affiliation: {

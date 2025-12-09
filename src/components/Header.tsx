@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X, Terminal } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -9,8 +9,11 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Terminal className="h-8 w-8 text-primary" />
-            <span className="ml-2 text-xl font-bold text-slate-900">Comp4Good</span>
+            <img 
+              src={`${import.meta.env.BASE_URL}logo.png`} 
+              alt="Comp4Good" 
+              className="h-12 w-auto" 
+            />
           </div>
           
           <div className="hidden md:flex space-x-8">
@@ -44,4 +47,3 @@ export const Header: React.FC = () => {
     </header>
   );
 };
-
