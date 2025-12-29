@@ -9,11 +9,7 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <img 
-              src={`${import.meta.env.BASE_URL}logo.png`} 
-              alt="Comp4Good" 
-              className="h-12 w-auto" 
-            />
+            Computing 4 Good
           </div>
           
           <div className="hidden md:flex space-x-8">

@@ -1,6 +1,6 @@
-# Computing 4 Good Research Group (Comp4Good)
+# Computing 4 Good (Comp4Good)
 
-This repository contains the website for the Computing 4 Good Research Group, merging the activities of RegTech4AI and CoCoDa.
+This repository contains the website for Computing 4 Good.
 
 ## Tech Stack
 
