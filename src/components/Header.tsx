@@ -1,5 +1,8 @@
+
 import React from 'react';
 import { Menu, X } from 'lucide-react';
+
+import { siteData } from '../data/content';
 
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -8,10 +11,22 @@ export const Header: React.FC = () => {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            Computing 4 Good
+          <div className="flex items-center space-x-3">
+            <img
+              src={`${import.meta.env.BASE_URL}logo-no-text.png`}
+              alt={siteData.acronym}
+              className="h-10 w-auto"
+            />
+            <div className="flex flex-col">
+              <div className="flex items-center text-xl font-bold text-slate-900">
+                {siteData.title}
+              </div>
+              <div className="text-xs text-slate-500 hidden sm:block">
+                {siteData.affiliation.name}
+              </div>
+            </div>
           </div>
-          
+
           <div className="hidden md:flex space-x-8">
             <a href="#about" className="text-slate-600 hover:text-primary transition-colors">About</a>
             <a href="#projects" className="text-slate-600 hover:text-primary transition-colors">Projects</a>
@@ -20,7 +35,7 @@ export const Header: React.FC = () => {
           </div>
 
           <div className="md:hidden">
-            <button 
+            <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-slate-600 hover:text-primary"
             >

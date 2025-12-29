@@ -1,9 +1,9 @@
 export const siteData = {
-  title: "Comp4Good",
+  title: "Computing for Good",
   acronym: "Comp4Good",
-  description: "Computing for Good: Interdisciplinary research at the intersection of Computer Science and Law, aiming to make technology work for society.",
+  description: "An interdisciplinary research team striving make technology work for society, by combining technical, legal, and social approaches.",
   affiliation: {
-    name: "Law & Tech Lab, Faculty of Law, Maastricht University",
+    name: "Law & Tech Lab, Maastricht University",
     url: "https://www.maastrichtuniversity.nl/law-tech-lab"
   },
   projects: [
