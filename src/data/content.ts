@@ -3,7 +3,7 @@ import { publications } from './publications';
 export const siteData = {
   title: "Computing for Good",
   acronym: "Comp4Good",
-  description: "An interdisciplinary research team striving make technology work for society, by combining technical, legal, and social approaches.",
+  description: "An interdisciplinary research team striving make technology work for society, by combining technical, policy, and social perspectives.",
   affiliation: {
     name: "Law & Tech Lab, Maastricht University",
     url: "https://www.maastrichtuniversity.nl/law-tech-lab"
