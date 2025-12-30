@@ -1,3 +1,5 @@
+import { publications } from './publications';
+
 export const siteData = {
   title: "Computing for Good",
   acronym: "Comp4Good",
@@ -78,5 +80,6 @@ export const siteData = {
     "Simon Mayer (University of St. Gallen)",
     "Aurelia Tamò-Larrieux (University of Lausanne)",
     "Elena Simperl (Open Data Institute)"
-  ]
+  ],
+  publications
 };

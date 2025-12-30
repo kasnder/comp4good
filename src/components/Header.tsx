@@ -31,7 +31,7 @@ export const Header: React.FC = () => {
             <a href="#about" className="text-slate-600 hover:text-primary transition-colors">About</a>
             <a href="#projects" className="text-slate-600 hover:text-primary transition-colors">Projects</a>
             <a href="#team" className="text-slate-600 hover:text-primary transition-colors">Team</a>
-            <a href="#partners" className="text-slate-600 hover:text-primary transition-colors">Partners</a>
+            <a href="#publications" className="text-slate-600 hover:text-primary transition-colors">Publications</a>
           </div>
 
           <div className="md:hidden">
@@ -51,6 +51,7 @@ export const Header: React.FC = () => {
             <a href="#about" className="block px-3 py-2 text-slate-600 hover:text-primary" onClick={() => setIsMenuOpen(false)}>About</a>
             <a href="#projects" className="block px-3 py-2 text-slate-600 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Projects</a>
             <a href="#team" className="block px-3 py-2 text-slate-600 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Team</a>
+            <a href="#publications" className="block px-3 py-2 text-slate-600 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Publications</a>
             <a href="#partners" className="block px-3 py-2 text-slate-600 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Partners</a>
           </div>
         </div>
