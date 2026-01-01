@@ -53,7 +53,7 @@ export const Publications: React.FC = () => {
                                     </div>
 
                                     {pub.abstract && (
-                                        <p className="text-slate-600/90 text-sm mb-4 leading-relaxed line-clamp-3 hover:line-clamp-none transition-all cursor-pointer">
+                                        <p className="text-slate-600/90 text-sm mb-4 leading-relaxed">
                                             {pub.abstract}
                                         </p>
                                     )}
