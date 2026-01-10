@@ -26,6 +26,15 @@ export const siteData = {
       link: "https://snsf-cocoda.github.io",
       tags: ["Online Platforms", "Systemic Risks", "DSA", "Techno-Legal"],
       logo: import.meta.env.BASE_URL + "cocoda-logo.png"
+    },
+    {
+      id: "redd",
+      title: "ReDD Focus",
+      subtitle: "Reduce Digital Distraction",
+      description: "The Reduce Digital Distraction Project delivers innovative, research-informed interventions to help young people take back control over their digital lives. Based on award-winning research & engineering, ReDD provides tools and resources to empower users to manage their digital habits.",
+      link: "https://www.reddfocus.org",
+      tags: ["Digital Wellbeing", "Screen Time", "Youth", "Research"],
+      logo: import.meta.env.BASE_URL + "redd-logo.png"
     }
   ],
   team: [
