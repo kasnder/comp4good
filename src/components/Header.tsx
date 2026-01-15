@@ -29,6 +29,7 @@ export const Header: React.FC = () => {
 
           <div className="hidden md:flex space-x-8">
             <a href="#about" className="text-slate-600 hover:text-primary transition-colors">About</a>
+            <a href="#methods" className="text-slate-600 hover:text-primary transition-colors">Our Approach</a>
             <a href="#projects" className="text-slate-600 hover:text-primary transition-colors">Projects</a>
             <a href="#team" className="text-slate-600 hover:text-primary transition-colors">Team</a>
             <a href="#publications" className="text-slate-600 hover:text-primary transition-colors">Publications</a>
@@ -49,6 +50,7 @@ export const Header: React.FC = () => {
         <div className="md:hidden bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="#about" className="block px-3 py-2 text-slate-600 hover:text-primary" onClick={() => setIsMenuOpen(false)}>About</a>
+            <a href="#methods" className="block px-3 py-2 text-slate-600 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Our Approach</a>
             <a href="#projects" className="block px-3 py-2 text-slate-600 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Projects</a>
             <a href="#team" className="block px-3 py-2 text-slate-600 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Team</a>
             <a href="#publications" className="block px-3 py-2 text-slate-600 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Publications</a>

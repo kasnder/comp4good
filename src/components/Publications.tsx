@@ -24,7 +24,7 @@ export const Publications: React.FC = () => {
 
                         return monthB - monthA;
                     }).map((pub) => (
-                        <div key={pub.id} className="bg-white rounded-xl p-6 border border-slate-100 hover:shadow-md transition-shadow h-full flex flex-col">
+                        <div id={`pub-${pub.id}`} key={pub.id} className="bg-white rounded-xl p-6 border border-slate-100 hover:shadow-md transition-shadow h-full flex flex-col">
                             <div className="flex flex-col gap-4 h-full">
                                 <div>
                                     <div className="flex flex-wrap items-center gap-3 mb-2">

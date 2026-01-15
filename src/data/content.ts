@@ -4,6 +4,26 @@ export const siteData = {
   title: "Computing for Good",
   acronym: "Comp4Good",
   description: "An interdisciplinary research team striving to make technology work for society, by combining technical, policy, and social perspectives.",
+  methods: {
+    intro: "Our research is problem-driven, integrating diverse methodological approaches to address real-world challenges at the intersection of technology, law/policy, and society.",
+    categories: [
+      {
+        title: "Technical Methods",
+        description: "Large-scale data science, machine learning and NLP, and reverse-engineering to analyse and understand complex technical systems.",
+        examples: [1, 7] // SEC 10-K analysis with ML, keystroke tracking measurement
+      },
+      {
+        title: "Legal & Policy Analysis",
+        description: "AI regulation, privacy law, competition law, and online platform regulation across the EU, US, UK, Switzerland, and China.",
+        examples: [5, 3] // DSA analysis, Competition law
+      },
+      {
+        title: "Qualitative Methods",
+        description: "Prototyping, interviews, and surveys to understand user needs and evaluate solutions.",
+        examples: [1, 5] // SEC 10-K analysis with ML, data access requests
+      }
+    ]
+  },
   affiliation: {
     name: "Law & Tech Lab, Maastricht University",
     url: "https://www.maastrichtuniversity.nl/law-tech-lab"
