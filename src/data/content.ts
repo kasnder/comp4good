@@ -15,7 +15,7 @@ export const siteData = {
       {
         title: "Legal & Policy Analysis",
         description: "AI regulation, privacy law, competition law, and online platform regulation across the EU, US, UK, Switzerland, and China.",
-        examples: [5, 3] // DSA analysis, Competition law
+        examples: [6, 3] // GPC analysis, Competition law
       },
       {
         title: "Qualitative Methods",
