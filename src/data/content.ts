@@ -65,12 +65,6 @@ export const siteData = {
       image: import.meta.env.BASE_URL + "team/konrad.jpg"
     },
     {
-      name: "Qian Li",
-      role: "Postdoctoral Researcher",
-      project: ["RegTech4AI"],
-      image: import.meta.env.BASE_URL + "team/qian.jpg"
-    },
-    {
       name: "Kamil Szostak",
       role: "PhD Student",
       project: ["RegTech4AI"],
