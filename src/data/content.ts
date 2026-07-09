@@ -52,8 +52,8 @@ export const content = {
     },
     {
       id: "redd",
-      title: "ReDD Focus",
-      subtitle: "Reduce Digital Distraction",
+      title: "Centre for Digital Habits",
+      subtitle: "Based on 10+ years of Oxford research",
       description:
         "The Reduce Digital Distraction Project delivers innovative, research-informed interventions to help young people take back control over their digital lives. Based on award-winning research & engineering, ReDD provides tools and resources to empower users to manage their digital habits.",
       funder: "Reduce Digital Distraction",
@@ -127,7 +127,7 @@ export const content = {
       },
       {
         title: "Thesis supervision",
-        body: "We supervise BSc/MSc theses at Maastricht University on app privacy, platform regulation, AI governance, and digital wellbeing.",
+        body: "We supervise undergraduate and graduate theses at Maastricht University on app privacy, platform regulation, AI governance, and digital wellbeing.",
       },
       {
         title: "Collaboration & funding",
