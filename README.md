@@ -1,66 +1,68 @@
 # Computing 4 Good (Comp4Good)
 
-This repository contains the website for Computing 4 Good.
+The umbrella site for Comp4Good, the interdisciplinary research team at Maastricht
+University's Law & Tech Lab behind [RegTech4AI](https://regtech4ai.com),
+[CoCoDa](https://snsf-cocoda.github.io) and [ReDD Focus](https://www.reddfocus.org).
+A single-page [Astro](https://astro.build) static site sharing the design system of
+[kollnig.net](https://kollnig.net) — Newsreader serif, paper/ink tokens, dark mode —
+with its own deep-teal accent.
 
-## Tech Stack
+## Tech stack
 
-- **Framework**: React (Vite)
+- **Framework**: [Astro](https://astro.build) (static output, zero client JS bar the
+  theme toggle)
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
+- **Styling**: plain CSS, design tokens in `src/styles/global.css`
 
-## Local Development
+## Local development
 
-1.  **Install dependencies**:
-    ```bash
-    npm install
-    ```
+```bash
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # -> dist/
+npm run preview
+```
 
-2.  **Start the development server**:
-    ```bash
-    npm run dev
-    ```
-    The site will be available at `http://localhost:5173`.
+## Content
 
-3.  **Build for production**:
-    ```bash
-    npm run build
-    ```
+- `src/data/content.ts` — mission, research themes, projects, team, collaborators,
+  "join us" text. Edit this file to update copy; the page (`src/pages/index.astro`)
+  reads from it.
+- `src/data/publications.json` — **generated, not hand-edited.** See below.
+- `public/team/*.jpg` — team photos.
 
-## Content Management
+## Publications
 
-To update the website content (team members, projects, text):
-- Edit `src/data/content.ts`.
-- This file contains all the text data for the website.
+`src/data/publications.json` is synced from the sibling `kollnig.net` repo's
+`tools/sync_pubs.py`, which merges Konrad Kollnig's personal publication feed
+(Google Scholar + DBLP + OpenAlex, restricted to 2024 onward) with every other lab
+member's OpenAlex works, resolved by a pinned OpenAlex author ID per member. Author
+lists and project tags for jointly-authored papers come from that repo's
+`tools/publications.json` seed.
+
+To resync, from the `kollnig.net` repo root (with this repo checked out as a
+sibling directory):
+
+```bash
+python3 tools/sync_pubs.py
+```
+
+The sync is skipped (with a notice, no files touched) if this repo isn't checked
+out next to `kollnig.net`, and never wipes existing output on fetch failure.
 
 ## Deployment
 
-This project is configured to deploy to **GitHub Pages** using GitHub Actions.
+Deploys to **GitHub Pages** via `.github/workflows/deploy.yml`: `npm ci` →
+`npm run build` → upload `dist/`, triggered on push to `main`. The site is served
+from the custom domain `comp4good.com` (`astro.config.mjs` sets `site` accordingly;
+no `base` path needed).
 
-### Setup Instructions
+## Project structure
 
-1.  **Push to GitHub**:
-    Push this code to a GitHub repository.
-
-2.  **Configure Settings**:
-    - Go to your repository on GitHub.
-    - Go to **Settings** > **Pages**.
-    - Under **Build and deployment**, select **GitHub Actions** as the source.
-
-3.  **Update `vite.config.ts`** (Important for Project Pages):
-    - If your repository is named `my-repo`, you must update `vite.config.ts`:
-      ```typescript
-      base: '/my-repo/',
-      ```
-    - If you are using a custom domain or `username.github.io`, you can leave `base: '/'`.
-
-4.  **Trigger Deployment**:
-    - Commit and push changes to the `main` branch.
-    - The "Deploy to GitHub Pages" action will run automatically.
-
-## Project Structure
-
-- `src/components/`: Reusable React components.
-- `src/data/`: Content and data files.
-- `src/App.tsx`: Main application layout.
-- `.github/workflows/`: GitHub Actions configuration.
+- `src/layouts/Base.astro` — shared shell: head/SEO, masthead, nav, footer, theme
+  toggle.
+- `src/pages/index.astro` — the single page (mission, themes, projects, team,
+  publications, join us).
+- `src/data/` — content and publications data (see above).
+- `src/styles/global.css` — design tokens and base styles.
+- `public/` — logos, team photos, self-hosted fonts.

@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base path="/404" title="Page not found">
+  <div class="wrap notfound">
+    <p class="code">404</p>
+    <h2>This page doesn’t exist.</h2>
+    <p>The page you’re looking for may have moved or never existed.</p>
+    <p><a href="/">← Back to Computing for Good</a></p>
+  </div>
+</Base>
+
+<style>
+  .notfound { max-width: 40rem; text-align: center; padding: 72px 24px 48px; }
+  .code {
+    font-family: var(--sans); font-size: 0.9rem; font-weight: 600;
+    letter-spacing: 0.2em; color: var(--accent); margin: 0 0 8px;
+  }
+  .notfound h2 { font-size: 1.8rem; font-weight: 400; font-style: italic; margin: 0 0 12px; }
+  .notfound p { color: var(--ink-soft); margin: 0 0 12px; }
+</style>

@@ -1,0 +1,148 @@
+---
+import '../styles/global.css';
+import { content } from '../data/content';
+
+const SITE = {
+  name: 'Computing for Good',
+  tagline: 'Law & Tech Lab · Maastricht University',
+  url: 'https://comp4good.com',
+  description:
+    'Computing for Good (Comp4Good) is an interdisciplinary research team at Maastricht University’s Law & Tech Lab, making technology work for society by combining technical, policy, and social perspectives.',
+  author: 'Konrad Kollnig',
+  locale: 'en',
+};
+
+const NAV = [
+  { href: '#themes', label: 'Themes' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#team', label: 'Team' },
+  { href: '#publications', label: 'Publications' },
+  { href: '#join', label: 'Join Us' },
+];
+
+const SOCIAL = [
+  { href: '/#team', label: 'Contact a team member' },
+  { href: 'https://www.maastrichtuniversity.nl/research/law-and-tech-lab', label: 'Law & Tech Lab' },
+  { href: 'https://kollnig.net', label: 'Konrad Kollnig' },
+];
+
+interface Props {
+  title?: string;
+  description?: string;
+  path: string;
+  image?: string;
+}
+
+const { title, description = SITE.description, path, image } = Astro.props;
+
+const canonical = new URL(path, SITE.url).href;
+const fullTitle = title ? `${title} — ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
+const ogImage = new URL(image ?? '/logo.png', SITE.url).href;
+const currentYear = new Date().getFullYear();
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ResearchOrganization',
+  name: SITE.name,
+  alternateName: 'Comp4Good',
+  url: SITE.url,
+  description: SITE.description,
+  parentOrganization: {
+    '@type': 'CollegeOrUniversity',
+    name: 'Maastricht University',
+    url: 'https://www.maastrichtuniversity.nl',
+  },
+  member: content.team.map((m) => ({
+    '@type': 'Person',
+    name: m.name,
+    ...(m.name === 'Konrad Kollnig' ? { url: 'https://kollnig.net' } : {}),
+  })),
+};
+---
+<!doctype html>
+<html lang={SITE.locale}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta name="author" content={SITE.author} />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:site_name" content={SITE.name} />
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+
+  <!-- Preload the two most-used font cuts -->
+  <link rel="preload" href="/fonts/newsreader-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/newsreader-600.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="icon" href="/logo-no-text.png" type="image/png" />
+
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script is:inline>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="masthead wrap">
+    <a class="brand" href="/" aria-label={`${SITE.name} — home`}>
+      <img class="brand-mark" src="/logo-no-text.png" width="48" height="48" alt="" />
+      <h1 class="name">{SITE.name}</h1>
+    </a>
+    <p class="masthead-sub">{SITE.tagline}</p>
+  </header>
+  <nav class="site-nav" aria-label="Primary">
+    {NAV.map((item) => (
+      <a href={item.href}>{item.label}</a>
+    ))}
+  </nav>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="links">
+        {SOCIAL.map((s) => <a href={s.href}>{s.label}</a>)}
+      </div>
+      © {currentYear} {SITE.name} · <a href="https://www.maastrichtuniversity.nl/research/law-and-tech-lab">Law &amp; Tech Lab, Maastricht University</a>
+      · <button type="button" id="theme-toggle" aria-label="Toggle light or dark theme">Theme</button>
+    </div>
+  </footer>
+
+  <script is:inline>
+    (function () {
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var root = document.documentElement;
+          var current = root.dataset.theme ||
+            (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          var next = current === 'dark' ? 'light' : 'dark';
+          root.dataset.theme = next;
+          try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
