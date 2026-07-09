@@ -55,8 +55,8 @@ export const content = {
       title: "Centre for Digital Habits",
       subtitle: "Based on 10+ years of Oxford research",
       description:
-        "The Reduce Digital Distraction Project delivers innovative, research-informed interventions to help young people take back control over their digital lives. Based on award-winning research & engineering, ReDD provides tools and resources to empower users to manage their digital habits.",
-      funder: "Reduce Digital Distraction",
+        "The Centre for Digital Habits develops research-informed interventions to help young people take back control over their digital lives. Grounded in award-winning research & engineering, we provide tools and resources to empower users to manage their digital habits.",
+      funder: "ImpactU (UK)",
       link: "https://www.reddfocus.org",
       logo: "/redd-logo.png",
     },
