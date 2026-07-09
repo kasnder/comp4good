@@ -55,7 +55,7 @@ const jsonLd = {
   member: content.team.map((m) => ({
     '@type': 'Person',
     name: m.name,
-    ...(m.name === 'Konrad Kollnig' ? { url: 'https://kollnig.net' } : {}),
+    ...(m.link ? { url: m.link } : {}),
   })),
 };
 ---
