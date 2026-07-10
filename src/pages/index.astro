@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { content, projectLabels } from '../data/content';
 import publications from '../data/publications.json';
+import { imageSrcset, imageVariant } from '../lib/image-variants';
 
 type Pub = {
   year: number;
@@ -48,6 +49,11 @@ const projectMeta: Record<string, { label: string; url: string }> = Object.fromE
       ))}
     </p>
     <p class="mission-desc">{content.mission.description}</p>
+    <p class="mission-actions">
+      <a href="#themes">Explore our work <span aria-hidden="true">↓</span></a>
+      <span aria-hidden="true">·</span>
+      <a href="#join">Work with us <span aria-hidden="true">→</span></a>
+    </p>
 
     <h2 class="section-label" id="themes">Research Themes</h2>
     {content.themes.map((theme) => (
@@ -63,7 +69,9 @@ const projectMeta: Record<string, { label: string; url: string }> = Object.fromE
     <div class="projects">
       {content.projects.map((project) => (
         <a class="project-card" href={project.link} target="_blank" rel="noopener">
-          <img class="project-logo" src={project.logo} alt="" loading="lazy" />
+          <img class="project-logo" src={imageVariant(project.logo, 96)}
+            srcset={imageSrcset(project.logo)} sizes="56px" width="56" height="56"
+            alt="" loading="lazy" decoding="async" />
           <div class="project-body">
             <h3>{project.title}</h3>
             <p class="project-subtitle">{project.subtitle}</p>
@@ -78,7 +86,8 @@ const projectMeta: Record<string, { label: string; url: string }> = Object.fromE
     <div class="team-grid">
       {content.team.map((member) => (
         <div class="team-member">
-          <img src={member.image} alt={member.name} loading="lazy" />
+          <img src={imageVariant(member.image, 96)} srcset={imageSrcset(member.image)}
+            sizes="96px" width="96" height="96" alt={member.name} loading="lazy" decoding="async" />
           <p class="team-name">{member.link ? <a href={member.link} target="_blank" rel="noopener">{member.name}</a> : member.name}</p>
           <p class="team-role">{member.role}</p>
           <p class="team-projects">
@@ -175,6 +184,13 @@ const projectMeta: Record<string, { label: string; url: string }> = Object.fromE
     max-width: 38em; margin: 28px auto 0; text-align: center;
     font-size: 1.08rem; color: var(--ink-soft);
   }
+  .mission-actions {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 7px;
+    margin: 24px 0 0; font-family: var(--sans); font-size: 0.8rem;
+    letter-spacing: 0.04em; color: var(--ink-soft);
+  }
+  .mission-actions a { color: var(--ink-soft); }
+  .mission-actions a:hover { color: var(--accent); text-decoration: none; }
 
   .question { margin: 44px 0; }
   .q-eyebrow { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 6px; }

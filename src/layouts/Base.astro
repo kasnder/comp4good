@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { content } from '../data/content';
+import { imageSrcset, imageVariant } from '../lib/image-variants';
 
 const SITE = {
   name: 'Computing for Good',
@@ -89,7 +90,7 @@ const jsonLd = {
 
   <link rel="icon" href="/logo-no-text.png" type="image/png" />
 
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
 
   <!-- Apply saved theme before paint to avoid a flash -->
   <script is:inline>
@@ -104,7 +105,8 @@ const jsonLd = {
 <body>
   <header class="masthead wrap">
     <a class="brand" href="/" aria-label={`${SITE.name} — home`}>
-      <img class="brand-mark" src="/logo-no-text.png" width="48" height="48" alt="" />
+      <img class="brand-mark" src={imageVariant('/logo-no-text.png', 96)}
+        srcset={imageSrcset('/logo-no-text.png')} sizes="48px" width="48" height="48" alt="" decoding="async" />
       <h1 class="name">{SITE.name}</h1>
     </a>
     <p class="masthead-sub">{SITE.tagline}</p>
@@ -133,7 +135,7 @@ const jsonLd = {
         {SOCIAL.map((s) => <a href={s.href}>{s.label}</a>)}
       </div>
       © {currentYear} {SITE.name} · <a href="https://www.maastrichtuniversity.nl/research/law-and-tech-lab">Law &amp; Tech Lab, Maastricht University</a>
-      · <button type="button" id="theme-toggle" aria-label="Toggle light or dark theme">Theme</button>
+      · <button type="button" id="theme-toggle" aria-label="Switch theme">Theme</button>
     </div>
   </footer>
 
@@ -141,13 +143,24 @@ const jsonLd = {
     (function () {
       var btn = document.getElementById('theme-toggle');
       if (btn) {
+        var getTheme = function () {
+          return document.documentElement.dataset.theme ||
+            (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        };
+        var describeTheme = function () {
+          var current = getTheme();
+          btn.setAttribute('aria-pressed', current === 'dark' ? 'true' : 'false');
+          btn.setAttribute('aria-label', current === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+          btn.title = current === 'dark' ? 'Switch to light theme' : 'Switch to dark theme';
+        };
+        describeTheme();
         btn.addEventListener('click', function () {
           var root = document.documentElement;
-          var current = root.dataset.theme ||
-            (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          var current = getTheme();
           var next = current === 'dark' ? 'light' : 'dark';
           root.dataset.theme = next;
           try { localStorage.setItem('theme', next); } catch (e) {}
+          describeTheme();
         });
       }
     })();

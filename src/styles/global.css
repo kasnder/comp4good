@@ -135,6 +135,7 @@ img { max-width: 100%; height: auto; }
 .section-label {
   font-family: var(--sans); font-size: 0.74rem; letter-spacing: 0.24em;
   text-transform: uppercase; color: var(--accent); text-align: center; margin: 76px 0 8px;
+  scroll-margin-top: 28px;
 }
 .section-label::after { content: ""; display: block; width: 34px; height: 1px; background: var(--accent); margin: 14px auto 0; }
 
