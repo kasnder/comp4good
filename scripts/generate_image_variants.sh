@@ -37,6 +37,8 @@ assets=(
   public/team/lucas.jpg
   public/team/ishitaa.jpg
   public/team/henry.jpg
+  public/team/defne.jpg
+  public/team/dick.jpg
 )
 
 for asset in "${assets[@]}"; do

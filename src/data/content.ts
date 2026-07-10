@@ -1,31 +1,28 @@
 export const content = {
   mission: {
-    thesis: ["Technology shapes society.", "We make it answer to society."],
+    thesis: ["Technology is never just technical.", "We ask who shapes it — and whom it serves."],
     description:
-      "Comp4Good is an interdisciplinary research team at Maastricht University's Law & Tech Lab, working at the intersection of computer science, law, and society. We combine technical, policy, and social methods to test whether the systems that govern our data and our attention — and the laws meant to hold them accountable — actually work in practice, then build the tools and evidence to make them better.",
+      "Computing for Good is an interdisciplinary research team at Maastricht University's Law & Tech Lab. We investigate apps, AI systems, and online platforms in the real world, and build tools and evidence for more accountable technology.",
   },
 
   themes: [
     {
       id: "ai-regulation",
       eyebrow: "AI & Data Regulation",
-      question: "Europe has the world's most ambitious tech laws. Do they work in practice?",
-      body: "We study how the GDPR and the EU AI Act actually land on real systems — from AI risk disclosures in corporate filings to watermarking practice in generative AI tools. In RegTech4AI, we build regulatory technology that helps make these laws enforceable rather than aspirational.",
-      refs: "RegTech4AI · AiNed Fellowship",
+      question: "What would it take to make AI regulation work in practice?",
+      body: "We examine the gap between legal obligations and technical practice — from AI risk disclosures in corporate filings to watermarking in generative AI systems. Our aim is to identify where compliance can be measured and enforcement strengthened.",
     },
     {
       id: "platform-power",
       eyebrow: "Platform Power & Systemic Risks",
-      question: "Dominant platforms shape public discourse. Who gets to check that?",
-      body: "Large online platforms pose systemic risks to democracy and public debate that existing oversight struggles to reach. In CoCoDa, we combine technical data-access methods with novel legal approaches under the Digital Services Act to measure these risks and build techno-legal tools for regulators and civil society.",
-      refs: "CoCoDa · SNSF, €1.2M",
+      question: "How can outsiders scrutinise the platforms that shape public life?",
+      body: "We study how researchers, regulators, and civil society can gain meaningful access to platform data and assess systemic risks to democracy and public debate under the Digital Services Act.",
     },
     {
       id: "digital-wellbeing",
       eyebrow: "Privacy & Digital Wellbeing",
-      question: "Should we ban social media — or build technology people control?",
-      body: "Rather than waiting for bans, we build tools that put people back in control of their data and their attention. Through the ReDD Focus project, we develop open-source, privacy-first software grounded in a decade of research on digital distraction and app tracking.",
-      refs: "ReDD Focus · Reduce Digital Distraction",
+      question: "How can people reshape technology around their own goals?",
+      body: "We study how design and data practices shape attention and autonomy, and develop privacy-first interventions that let people adapt technology around their own goals.",
     },
   ],
 
@@ -35,17 +32,25 @@ export const content = {
       title: "RegTech4AI",
       subtitle: "Bringing AI Law into Practice",
       description:
-        "An NGF-funded project applying technical methods to the law with the aim of making the EU's ambitious AI regulation — particularly the GDPR and AI Act — work in practice. The project focuses on the challenge of implementation: making AI-relevant laws work in real-world scenarios.",
+        "RegTech4AI uses technical methods to test how the GDPR and EU AI Act operate in real settings. We develop regulatory tools that make compliance easier to assess and enforcement more practical.",
       funder: "NGF / AiNed Fellowship",
       link: "https://regtech4ai.com",
       logo: "/regtech4ai-logo.png",
+    },
+    {
+      id: "regulaire",
+      title: "REGULAIRE",
+      subtitle: "Regulatory Learning for the Governance of Transformative Technologies",
+      description:
+        "REGULAIRE trains fifteen doctoral fellows across ten European universities to study how public authorities can keep pace with technological change — how they detect emerging issues, design interventions, and share what they learn. Comp4Good contributes expertise on regulatory technologies, legal AI audits, and links with public authorities, including the Dutch ACM and AP, the French CNIL, the OECD, and UNESCO.",
+      funder: "EU Horizon MSCA Doctoral Network, €4.7M",
     },
     {
       id: "cocoda",
       title: "CoCoDa",
       subtitle: "Studying Systemic Risks on Online Platforms",
       description:
-        "Motivated by the systemic risks to democracy posed by dominant online platforms, CoCoDa combines technical data-access methods with novel legal approaches (like the DSA) to measure and mitigate these risks. We develop integrated 'techno-legal' tools to support regulators and civil society.",
+        "CoCoDa develops technical and legal methods for accessing platform data and measuring systemic risks under the Digital Services Act. Its tools are designed for researchers, regulators, and civil-society organisations.",
       funder: "SNSF, €1.2M",
       link: "https://snsf-cocoda.github.io",
       logo: "/cocoda-logo.png",
@@ -55,12 +60,15 @@ export const content = {
       title: "Centre for Digital Habits",
       subtitle: "Based on 10+ years of Oxford research",
       description:
-        "The Centre for Digital Habits develops research-informed interventions to help young people take back control over their digital lives. Grounded in award-winning research & engineering, we provide tools and resources to empower users to manage their digital habits.",
+        "The Centre develops privacy-first tools and evidence-based interventions that help young people manage their digital habits. It builds on more than a decade of Oxford research through the Reduce Digital Distraction programme.",
       funder: "ImpactU (UK)",
       link: "https://digitalhabits.org",
       logo: "/redd-logo.png",
     },
   ],
+
+  teamIntro:
+    "Based at Maastricht University's Law & Tech Lab, Comp4Good brings together computer scientists and legal scholars working across our projects.",
 
   team: [
     {
@@ -112,6 +120,18 @@ export const content = {
       image: "/team/henry.jpg",
       link: "https://scholar.google.com/citations?user=2Q5Am-sAAAAJ",
     },
+    {
+      name: "Defne Halil",
+      role: "External PhD Student",
+      projects: ["regulaire"],
+      image: "/team/defne.jpg",
+    },
+    {
+      name: "Dick Blankvoort",
+      role: "External PhD Student · St. Gallen",
+      projects: [],
+      image: "/team/dick.jpg",
+    },
   ],
 
   partners: [
@@ -120,30 +140,30 @@ export const content = {
     "Marta Kołacz (Maastricht University)",
     "Jerry Spanakis (Maastricht University)",
     "Simon Mayer (University of St. Gallen)",
-    "Aurelia Tamò-Larrieux (University of Lausanne)",
+    "Aurelia Tamò-Larrieux (University of St. Gallen)",
     "Elena Simperl (Open Data Institute)",
   ],
 
   join: {
     intro:
-      "We're growing. If you want to work at the intersection of computer science, law, and society, we'd like to hear from you.",
+      "We welcome people who want to investigate and reshape digital systems across disciplinary boundaries.",
     points: [
       {
-        title: "PhD & postdoc positions",
-        body: "We periodically open funded PhD and postdoc positions across our projects. No open call at the moment — get in touch to be notified when one comes up.",
+        title: "Work with us",
+        body: "We collaborate with researchers, regulators, and civil-society organisations on shared questions, methods, and tools.",
       },
       {
-        title: "Thesis supervision",
+        title: "Study with us",
         body: "We supervise undergraduate and graduate theses at Maastricht University on app privacy, platform regulation, AI governance, and digital wellbeing.",
       },
       {
-        title: "Collaboration & funding",
-        body: "We work with regulators, civil society, and other research groups. If you're exploring a collaboration or funding opportunity, reach out.",
+        title: "Join the team",
+        body: "We periodically recruit PhD candidates, postdoctoral researchers, and research assistants across our projects.",
       },
     ],
     contact: {
-      label: "Contact a team member",
-      href: "#team",
+      label: "Start a conversation",
+      href: "mailto:konrad@comp4good.com",
     },
   },
 };
@@ -153,5 +173,6 @@ export const content = {
 // it never appears as a tag.
 export const projectLabels: Record<string, string> = {
   regtech4ai: "RegTech4AI",
+  regulaire: "REGULAIRE",
   cocoda: "CoCoDa",
 };
