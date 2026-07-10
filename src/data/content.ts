@@ -2,7 +2,7 @@ export const content = {
   mission: {
     thesis: ["Technology is never just technical.", "We ask who shapes it — and whom it serves."],
     description:
-      "Computing for Good is an interdisciplinary research team at Maastricht University's Law & Tech Lab. We investigate apps, AI systems, and online platforms in the real world, and build tools and evidence for more accountable technology.",
+      "Computing for Good is an interdisciplinary research team at Maastricht University's Law & Tech Lab. We audit AI systems, investigate apps and online platforms, and build tools and evidence that help hold technology to account.",
   },
 
   themes: [
@@ -42,8 +42,9 @@ export const content = {
       title: "REGULAIRE",
       subtitle: "Regulatory Learning for the Governance of Transformative Technologies",
       description:
-        "REGULAIRE trains fifteen doctoral fellows across ten European universities to study how public authorities can keep pace with technological change — how they detect emerging issues, design interventions, and share what they learn. Comp4Good contributes expertise on regulatory technologies, legal AI audits, and links with public authorities, including the Dutch ACM and AP, the French CNIL, the OECD, and UNESCO.",
+        "REGULAIRE trains fifteen doctoral fellows across ten European universities to help public authorities keep pace with technological change. Comp4Good contributes expertise in regulatory technologies, legal AI audits, and partnerships with regulators and international organisations.",
       funder: "EU Horizon MSCA Doctoral Network, €4.7M",
+      link: "https://tumthinktank.de/en/news/governing-a-moving-target/",
       logo: "/regulaire-logo.png",
     },
     {
@@ -75,7 +76,7 @@ export const content = {
     {
       name: "Konrad Kollnig",
       role: "Project Lead, Assistant Professor CS/Law",
-      projects: ["regtech4ai", "cocoda"],
+      projects: ["regtech4ai", "regulaire", "cocoda"],
       image: "/team/konrad.jpg",
       link: "https://kollnig.net",
     },
@@ -136,6 +137,7 @@ export const content = {
   ],
 
   partners: [
+    "Ulrik Lyngs (Centre for Digital Habits)",
     "Gijs van Dijck (Maastricht University)",
     "Johanna T. Gunawan (Maastricht University)",
     "Marta Kołacz (Maastricht University)",
