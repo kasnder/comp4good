@@ -88,6 +88,48 @@ img { max-width: 100%; height: auto; }
 }
 .site-nav a { color: var(--ink); }
 .site-nav a:hover { color: var(--accent); text-decoration: none; }
+.mobile-nav { display: none; }
+
+/* Keep the opening phone viewport focused on the lab's mission. */
+@media (max-width: 620px) {
+  .wrap { padding-inline: 28px; }
+
+  .masthead { padding-top: 52px; }
+  .masthead .brand { gap: 14px; }
+  .masthead-sub { margin-top: 16px; }
+
+  .site-nav { display: none; }
+  .mobile-nav {
+    display: block;
+    margin-top: 32px;
+    font-family: var(--sans);
+    font-size: 0.74rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .mobile-nav summary {
+    padding: 16px 24px;
+    text-align: center;
+    cursor: pointer;
+    list-style: none;
+    color: var(--ink-soft);
+  }
+  .mobile-nav summary::-webkit-details-marker { display: none; }
+  .mobile-nav summary::after { content: "+"; margin-left: 0.65em; color: var(--accent); }
+  .mobile-nav[open] summary::after { content: "−"; }
+  .mobile-nav summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
+  .mobile-nav nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 18px;
+    padding: 18px 28px;
+    text-align: center;
+    border-top: 1px solid var(--rule);
+  }
+  .mobile-nav a { color: var(--ink); }
+}
 
 /* ---- Section labels ------------------------------------------------------- */
 .section-label {

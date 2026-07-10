@@ -114,6 +114,14 @@ const jsonLd = {
       <a href={item.href}>{item.label}</a>
     ))}
   </nav>
+  <details class="mobile-nav">
+    <summary>Menu</summary>
+    <nav aria-label="Primary">
+      {NAV.map((item) => (
+        <a href={item.href}>{item.label}</a>
+      ))}
+    </nav>
+  </details>
 
   <main>
     <slot />
