@@ -57,7 +57,7 @@ export const content = {
       description:
         "The Centre for Digital Habits develops research-informed interventions to help young people take back control over their digital lives. Grounded in award-winning research & engineering, we provide tools and resources to empower users to manage their digital habits.",
       funder: "ImpactU (UK)",
-      link: "https://www.reddfocus.org",
+      link: "https://digitalhabits.org",
       logo: "/redd-logo.png",
     },
   ],
