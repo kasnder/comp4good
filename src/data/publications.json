@@ -159,7 +159,10 @@
     "authors": "D. Halil, K. Kollnig",
     "venue": "SSRN",
     "type": "preprint",
-    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5942396"
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5942396",
+    "projects": [
+      "regulaire"
+    ]
   },
   {
     "year": 2025,
@@ -220,7 +223,8 @@
     "type": "journal",
     "url": "https://doi.org/10.14763/2025.2.2010",
     "projects": [
-      "cocoda"
+      "cocoda",
+      "regulaire"
     ]
   },
   {

@@ -29,6 +29,7 @@ assets=(
   public/logo-no-text.png
   public/cocoda-logo.png
   public/regtech4ai-logo.png
+  public/regulaire-logo.png
   public/redd-logo.png
   public/team/konrad.jpg
   public/team/qian.jpg

@@ -44,6 +44,7 @@ export const content = {
       description:
         "REGULAIRE trains fifteen doctoral fellows across ten European universities to study how public authorities can keep pace with technological change — how they detect emerging issues, design interventions, and share what they learn. Comp4Good contributes expertise on regulatory technologies, legal AI audits, and links with public authorities, including the Dutch ACM and AP, the French CNIL, the OECD, and UNESCO.",
       funder: "EU Horizon MSCA Doctoral Network, €4.7M",
+      logo: "/regulaire-logo.png",
     },
     {
       id: "cocoda",
@@ -128,7 +129,7 @@ export const content = {
     },
     {
       name: "Dick Blankvoort",
-      role: "External PhD Student · St. Gallen",
+      role: "PhD Student · St. Gallen",
       projects: [],
       image: "/team/dick.jpg",
     },
