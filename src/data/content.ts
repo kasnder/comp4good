@@ -75,7 +75,7 @@ export const content = {
   team: [
     {
       name: "Konrad Kollnig",
-      role: "Project Lead, Assistant Professor CS/Law",
+      role: "Project Lead, Associate Professor CS/Law",
       projects: ["regtech4ai", "regulaire", "cocoda"],
       image: "/team/konrad.jpg",
       link: "https://kollnig.net",
