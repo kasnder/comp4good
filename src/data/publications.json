@@ -41,6 +41,17 @@
   },
   {
     "year": 2026,
+    "title": "From Microsoft 2004 to the DMA anno 2025: Empirically Unpacking Paradoxes in Digital Antitrust Enforcement",
+    "authors": "Q. Li, G. van Dijck",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://doi.org/10.2139/ssrn.7190999",
+    "projects": [
+      "regtech4ai"
+    ]
+  },
+  {
+    "year": 2026,
     "title": "From procedures to peril: Towards risk transparency in information privacy for users",
     "authors": "N. Ebert, S. Fischer-Hübner, S. Human, A. Kitkowska, K. Kollnig, J. Mitrović, ..., et al.",
     "venue": "Telecommunications Policy",
@@ -60,6 +71,17 @@
     "venue": "ACM FAccT",
     "type": "conference",
     "url": "https://doi.org/10.1145/3805689.3806436",
+    "projects": [
+      "regtech4ai"
+    ]
+  },
+  {
+    "year": 2026,
+    "title": "Measuring Market Contestability under Article 102 TFEU and the DMA",
+    "authors": "Q. Li, G. van Dijck",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://doi.org/10.2139/ssrn.7190920",
     "projects": [
       "regtech4ai"
     ]
@@ -90,7 +112,7 @@
   },
   {
     "year": 2026,
-    "title": "Systemic risks of dominant online platforms: A scoping review",
+    "title": "Systemic risks of dominant online platforms: a scoping review",
     "authors": "A. Palmieri, K. Kollnig, A. Tamò-Larrieux",
     "venue": "Computer Law & Security Review",
     "type": "journal",
@@ -123,9 +145,9 @@
     "year": 2026,
     "title": "Understanding Data Collection, Brokerage, and Spam in the Lead Marketing Ecosystem",
     "authors": "Y. Vekaria, N. Demir, K. Kollnig, Z. Shafiq",
-    "venue": "arXiv",
-    "type": "preprint",
-    "url": "https://doi.org/10.48550/arXiv.2604.06759"
+    "venue": "SP",
+    "type": "conference",
+    "url": "https://doi.org/10.1109/SP63933.2026.00162"
   },
   {
     "year": 2025,
@@ -175,7 +197,7 @@
   {
     "year": 2025,
     "title": "Data portability strategies in the EU: Moving beyond individual rights",
-    "authors": "Y. Chao, M. Xu, A. Tamo-Larrieux, K. Kollnig",
+    "authors": "Y. Chao, M. Xu, A. Tamò-Larrieux, K. Kollnig",
     "venue": "Computer Law & Security Review",
     "type": "journal",
     "url": "https://doi.org/10.2139/ssrn.5401709",
@@ -185,7 +207,7 @@
   },
   {
     "year": 2025,
-    "title": "Every Keystroke You Make: A Tech-Law Measurement and Analysis of Event Listeners for Wiretapping",
+    "title": "Every keystroke you make: A tech-law measurement and analysis of event listeners for wiretapping",
     "authors": "S. Munir, N. Demir, Q. Li, K. Kollnig, Z. Shafiq",
     "venue": "arXiv",
     "type": "preprint",
@@ -280,7 +302,7 @@
   },
   {
     "year": 2024,
-    "title": "Koala hero toolkit: A new approach to inform families of mobile datafication risks",
+    "title": "KOALA hero toolkit: a new approach to inform families of mobile datafication risks",
     "authors": "G. Wang, J. Zhao, K. Kollnig, A. Zier, B. Duron, Z. Zhang, M. Van Kleek, ..., et al.",
     "venue": "ACM CHI",
     "type": "conference",
