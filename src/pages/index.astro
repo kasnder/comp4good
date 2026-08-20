@@ -102,6 +102,11 @@ const projectMeta: Record<string, { label: string; url: string }> = Object.fromE
       ))}
     </div>
     <div class="collaborators">
+      <p class="collab-label">Undergraduate Research Assistants</p>
+      <p class="collab-list">{content.assistants.note}</p>
+      <p class="collab-list assistant-names">{content.assistants.coauthors.join(' · ')}</p>
+    </div>
+    <div class="collaborators">
       <p class="collab-label">Collaborators</p>
       <p class="collab-list">{content.partners.join(' · ')}</p>
     </div>
@@ -244,6 +249,7 @@ const projectMeta: Record<string, { label: string; url: string }> = Object.fromE
   .collaborators { margin-top: 44px; text-align: center; }
   .collab-label { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 8px; }
   .collab-list { margin: 0; font-size: 0.95rem; color: var(--ink-soft); max-width: 42em; margin: 0 auto; }
+  .assistant-names { margin-top: 8px; color: var(--ink); }
 
   /* ---- Publications ---- */
   .pub-intro { max-width: 36em; margin: 24px auto 0; text-align: center; font-size: 0.98rem; color: var(--ink-soft); }

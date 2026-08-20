@@ -136,6 +136,19 @@ export const content = {
     },
   ],
 
+  assistants: {
+    note:
+      "Twelve undergraduate research assistants have worked with the team so far. Six went on to co-author a paper with us.",
+    coauthors: [
+      "Alice",
+      "Beatrice",
+      "Lucia",
+      "Defne",
+      "Johanna",
+      "Petra",
+    ],
+  },
+
   partners: [
     "Ulrik Lyngs (Centre for Digital Habits)",
     "Gijs van Dijck (Maastricht University)",
