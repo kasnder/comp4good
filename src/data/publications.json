@@ -112,6 +112,17 @@
   },
   {
     "year": 2026,
+    "title": "SoK: Measuring Compliance With Privacy and Data Protection Laws After the GDPR",
+    "authors": "N. Reitinger, N. Apthorpe, K. Kollnig, A. Tamò-Larrieux, M. Xiao, S. Egelman, ..., et al.",
+    "venue": "Northwestern Law & Econ Research Paper, 26-33",
+    "type": "journal",
+    "url": "https://doi.org/10.2139/ssrn.7307500",
+    "projects": [
+      "regtech4ai"
+    ]
+  },
+  {
+    "year": 2026,
     "title": "Systemic risks of dominant online platforms: a scoping review",
     "authors": "A. Palmieri, K. Kollnig, A. Tamò-Larrieux",
     "venue": "Computer Law & Security Review",
