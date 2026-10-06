@@ -27,7 +27,7 @@
     "authors": "S. Zimmeck, H. Pandit, F. Borgesius, C. Santos, K. Kollnig, R. Berjon",
     "venue": "Computer Law & Security Review",
     "type": "journal",
-    "url": "https://doi.org/10.2139/ssrn.5891642",
+    "url": "https://doi.org/10.1016/j.clsr.2026.106332",
     "projects": [
       "regtech4ai"
     ]
@@ -57,6 +57,14 @@
   },
   {
     "year": 2026,
+    "title": "Exercising the CCPA Opt-out Right on Android: Legally Mandated but Practically Challenging",
+    "authors": "S. Zimmeck, N. Aggarwal, Z. Liu, S. Altman, K. Kollnig",
+    "venue": "Proc. Privacy Enhancing Technologies (PoPETs)",
+    "type": "journal",
+    "url": "https://doi.org/10.56553/popets-2026-0065"
+  },
+  {
+    "year": 2026,
     "title": "Exploring the \"Banality\" of Deception in Generative AI",
     "authors": "I. Narwane, J. Gunawan, K. Kollnig",
     "venue": "arXiv",
@@ -72,14 +80,15 @@
     "authors": "N. Ebert, S. Fischer-Hübner, S. Human, A. Kitkowska, K. Kollnig, J. Mitrović, ..., et al.",
     "venue": "Telecommunications Policy",
     "type": "journal",
-    "url": "https://doi.org/10.21256/zhaw-36331"
+    "url": "https://doi.org/10.1016/j.telpol.2026.103195"
   },
   {
     "year": 2026,
     "title": "From your Smart Watch to the Metaverse: Understanding the Scope of EU IoT Regulation in the Data Act",
     "authors": "P. Sîmpălean, A. Tamò-Larrieux, K. Kollnig",
     "venue": "Technology and Regulation",
-    "type": "journal"
+    "type": "journal",
+    "url": "https://doi.org/10.71265/dtrh7j46"
   },
   {
     "year": 2026,
@@ -204,7 +213,7 @@
     "authors": "Y. Chao, M. Xu, A. Tamò-Larrieux, K. Kollnig",
     "venue": "Computer Law & Security Review",
     "type": "journal",
-    "url": "https://doi.org/10.2139/ssrn.5401709",
+    "url": "https://doi.org/10.1016/j.clsr.2025.106135",
     "projects": [
       "regtech4ai"
     ]
@@ -235,7 +244,7 @@
     "authors": "D. Halil, K. Kollnig, A. Tamò-Larrieux",
     "venue": "Internet Policy Review",
     "type": "journal",
-    "url": "https://doi.org/10.2139/ssrn.4959049",
+    "url": "https://doi.org/10.14763/2025.2.2010",
     "projects": [
       "cocoda",
       "regtech4ai"
@@ -256,14 +265,6 @@
     "venue": "Computer Law Review International",
     "type": "journal",
     "url": "https://doi.org/10.9785/cri-2024-250201"
-  },
-  {
-    "year": 2024,
-    "title": "Exercising the CCPA Opt-out Right on Android: Legally Mandated but Practically Challenging",
-    "authors": "S. Zimmeck, N. Aggarwal, Z. Liu, S. Altman, K. Kollnig",
-    "venue": "arXiv",
-    "type": "preprint",
-    "url": "https://doi.org/10.56553/popets-2026-0065"
   },
   {
     "year": 2024,
@@ -315,14 +316,15 @@
     "authors": "K. Kollnig, L. Zhang, J. Zhao, N. Shadbolt",
     "venue": "Computer Law & Security Review",
     "type": "journal",
-    "url": "https://doi.org/10.2139/ssrn.4565608"
+    "url": "https://doi.org/10.1016/j.clsr.2024.106041"
   },
   {
     "year": 2024,
     "title": "Privacy of Personal Data in the Generative AI Data Lifecycle",
     "authors": "M. Duffourc, S. Gerke, K. Kollnig",
     "venue": "NYU Journal of Intellectual Property & Entertainment Law",
-    "type": "journal"
+    "type": "journal",
+    "url": "https://doi.org/10.2139/ssrn.4899219"
   },
   {
     "year": 2024,
