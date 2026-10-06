@@ -32,7 +32,6 @@ assets=(
   public/regulaire-logo.png
   public/redd-logo.png
   public/team/konrad.jpg
-  public/team/qian.jpg
   public/team/kamil.jpg
   public/team/bram.jpg
   public/team/lucas.jpg

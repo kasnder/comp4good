@@ -81,13 +81,6 @@ export const content = {
       link: "https://kollnig.net",
     },
     {
-      name: "Qian Li",
-      role: "Postdoctoral Researcher",
-      projects: ["regtech4ai"],
-      image: "/team/qian.jpg",
-      link: "https://www.maastrichtuniversity.nl/q-li",
-    },
-    {
       name: "Kamil Szostak",
       role: "PhD Student",
       projects: ["regtech4ai"],
@@ -125,7 +118,7 @@ export const content = {
     {
       name: "Defne Halil",
       role: "External PhD Student",
-      projects: ["regulaire"],
+      projects: ["regtech4ai"],
       image: "/team/defne.jpg",
     },
     {

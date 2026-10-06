@@ -1,21 +1,47 @@
 [
   {
     "year": 2026,
+    "title": "\" If I Had to Buy Just ONE: Galaxy S26 Ultra\": Auditing AI-Generated Product Recommendations",
+    "authors": "L. Marin, T. Bertaglia, G. Astante, B. Rijsbosch, G. van Dijck, A. Hannák, ..., et al.",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://doi.org/10.48550/arxiv.2609.18729",
+    "projects": [
+      "regtech4ai"
+    ]
+  },
+  {
+    "year": 2026,
     "title": "Building AI (In)dependence through EU's AI Factories",
     "authors": "D. Halil, B. Rijsbosch, K. Kollnig",
     "venue": "SSRN",
     "type": "preprint",
-    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6725720"
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6725720",
+    "projects": [
+      "regtech4ai"
+    ]
   },
   {
     "year": 2026,
     "title": "Can the GPC standard eliminate consent banners in the EU?",
     "authors": "S. Zimmeck, H. Pandit, F. Borgesius, C. Santos, K. Kollnig, R. Berjon",
-    "venue": "arXiv",
-    "type": "preprint",
-    "url": "https://doi.org/10.48550/arXiv.2512.08856",
+    "venue": "Computer Law & Security Review",
+    "type": "journal",
+    "url": "https://doi.org/10.2139/ssrn.5891642",
     "projects": [
       "regtech4ai"
+    ]
+  },
+  {
+    "year": 2026,
+    "title": "Drowning in AI Slop: How Social Media Platforms (Do Not) Label AI and Deepfake Content under EU law",
+    "authors": "B. Rijsbosch, L. Bekavac, H. Tari, G. van Dijck, K. Kollnig",
+    "venue": "arXiv",
+    "type": "preprint",
+    "url": "https://doi.org/10.48550/arxiv.2609.38571",
+    "projects": [
+      "regtech4ai",
+      "cocoda"
     ]
   },
   {
@@ -24,6 +50,7 @@
     "authors": "Y. Chao, A. Tamò-Larrieux, K. Kollnig",
     "venue": "Advancing the Study of Privacy Cynicism, Apathy and Resignation in the Digital Age (Edward Elgar)",
     "type": "journal",
+    "url": "https://doi.org/10.4337/9781035353248.00024",
     "projects": [
       "cocoda"
     ]
@@ -34,18 +61,7 @@
     "authors": "I. Narwane, J. Gunawan, K. Kollnig",
     "venue": "arXiv",
     "type": "preprint",
-    "url": "https://doi.org/10.48550/arXiv.2605.07012",
-    "projects": [
-      "regtech4ai"
-    ]
-  },
-  {
-    "year": 2026,
-    "title": "From Microsoft 2004 to the DMA anno 2025: Empirically Unpacking Paradoxes in Digital Antitrust Enforcement",
-    "authors": "Q. Li, G. van Dijck",
-    "venue": "arXiv",
-    "type": "preprint",
-    "url": "https://doi.org/10.2139/ssrn.7190999",
+    "url": "https://doi.org/10.48550/arxiv.2605.07012",
     "projects": [
       "regtech4ai"
     ]
@@ -55,7 +71,8 @@
     "title": "From procedures to peril: Towards risk transparency in information privacy for users",
     "authors": "N. Ebert, S. Fischer-Hübner, S. Human, A. Kitkowska, K. Kollnig, J. Mitrović, ..., et al.",
     "venue": "Telecommunications Policy",
-    "type": "journal"
+    "type": "journal",
+    "url": "https://doi.org/10.21256/zhaw-36331"
   },
   {
     "year": 2026,
@@ -77,17 +94,6 @@
   },
   {
     "year": 2026,
-    "title": "Measuring Market Contestability under Article 102 TFEU and the DMA",
-    "authors": "Q. Li, G. van Dijck",
-    "venue": "arXiv",
-    "type": "preprint",
-    "url": "https://doi.org/10.2139/ssrn.7190920",
-    "projects": [
-      "regtech4ai"
-    ]
-  },
-  {
-    "year": 2026,
     "title": "Measuring Privacy vs. Fidelity in Synthetic Social Media Datasets",
     "authors": "H. Tari, A. Iamnitchi",
     "venue": "arXiv",
@@ -103,10 +109,10 @@
     "authors": "B. Rijsbosch, G. van Dijck, K. Kollnig",
     "venue": "Policy & Internet",
     "type": "journal",
+    "url": "https://doi.org/10.1002/poi3.70041",
     "projects": [
       "regtech4ai"
     ],
-    "url": "https://doi.org/10.1002/poi3.70041",
     "highlight": true,
     "highlightRank": 3
   },
@@ -156,22 +162,9 @@
     "year": 2026,
     "title": "Understanding Data Collection, Brokerage, and Spam in the Lead Marketing Ecosystem",
     "authors": "Y. Vekaria, N. Demir, K. Kollnig, Z. Shafiq",
-    "venue": "SP",
-    "type": "conference",
-    "url": "https://doi.org/10.1109/SP63933.2026.00162"
-  },
-  {
-    "year": 2025,
-    "title": "Abuse of Relative Dominance by Digital Platforms: A Law and Economics Perspective",
-    "authors": "Q. Li, C. Cauffman",
-    "venue": "GRUR International",
+    "venue": "IEEE S&P 2026",
     "type": "journal",
-    "url": "https://academic.oup.com/grurint/article/74/3/217/7989429",
-    "projects": [
-      "regtech4ai"
-    ],
-    "highlight": true,
-    "highlightRank": 5
+    "url": "https://doi.org/10.1109/sp63933.2026.00162"
   },
   {
     "year": 2025,
@@ -194,7 +187,7 @@
     "type": "preprint",
     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5942396",
     "projects": [
-      "regulaire"
+      "regtech4ai"
     ]
   },
   {
@@ -203,7 +196,7 @@
     "authors": "L. Hoeben-Kuil, G. van Dijck, J. Savelka, J. Gunawan, K. Kollnig, M. Kolacz, ..., et al.",
     "venue": "JURIX",
     "type": "conference",
-    "url": "https://doi.org/10.3233/FAIA251580"
+    "url": "https://doi.org/10.3233/faia251580"
   },
   {
     "year": 2025,
@@ -221,19 +214,7 @@
     "title": "Every keystroke you make: A tech-law measurement and analysis of event listeners for wiretapping",
     "authors": "S. Munir, N. Demir, Q. Li, K. Kollnig, Z. Shafiq",
     "venue": "arXiv",
-    "type": "preprint",
-    "url": "https://doi.org/10.48550/arXiv.2508.19825"
-  },
-  {
-    "year": 2025,
-    "title": "Excessive Data Collection and (Mis)use of Data: A Comparative Law and Economics Study on the Chinese Didi Case and the German Facebook Case",
-    "authors": "Q. Li",
-    "venue": "The Chinese Journal of Comparative Law",
-    "type": "journal",
-    "url": "https://academic.oup.com/cjcl/article/doi/10.1093/cjcl/cxae018/7950806",
-    "projects": [
-      "regtech4ai"
-    ]
+    "type": "preprint"
   },
   {
     "year": 2025,
@@ -254,20 +235,9 @@
     "authors": "D. Halil, K. Kollnig, A. Tamò-Larrieux",
     "venue": "Internet Policy Review",
     "type": "journal",
-    "url": "https://doi.org/10.14763/2025.2.2010",
+    "url": "https://doi.org/10.2139/ssrn.4959049",
     "projects": [
       "cocoda",
-      "regulaire"
-    ]
-  },
-  {
-    "year": 2025,
-    "title": "The Economics of AI-enabled Price Discrimination",
-    "authors": "Q. Li",
-    "venue": "Economic analysis of law in European legal scholarship",
-    "type": "journal",
-    "url": "https://doi.org/10.1007/978-3-031-84790-5_1",
-    "projects": [
       "regtech4ai"
     ]
   },
@@ -277,7 +247,7 @@
     "authors": "K. Kollnig",
     "venue": "arXiv",
     "type": "preprint",
-    "url": "https://doi.org/10.48550/arXiv.2512.03793"
+    "url": "https://doi.org/10.48550/arxiv.2512.03793"
   },
   {
     "year": 2024,
@@ -291,25 +261,24 @@
     "year": 2024,
     "title": "Exercising the CCPA Opt-out Right on Android: Legally Mandated but Practically Challenging",
     "authors": "S. Zimmeck, N. Aggarwal, Z. Liu, S. Altman, K. Kollnig",
-    "venue": "Proc. Privacy Enhancing Technologies (PoPETs)",
-    "type": "journal",
+    "venue": "arXiv",
+    "type": "preprint",
     "url": "https://doi.org/10.56553/popets-2026-0065"
   },
   {
     "year": 2024,
     "title": "From ad identifiers to global privacy control: The status quo and future of opting out of ad tracking on Android",
     "authors": "S. Zimmeck, N. Aggarwal, Z. Liu, K. Kollnig",
-    "venue": "arXiv",
-    "type": "preprint",
-    "url": "https://doi.org/10.48550/arXiv.2407.14938"
+    "venue": null,
+    "type": "journal"
   },
   {
     "year": 2024,
     "title": "Google's Chrome Antitrust Paradox",
     "authors": "S. Munir, K. Kollnig, A. Shuba, Z. Shafiq",
-    "venue": "arXiv",
-    "type": "preprint",
-    "url": "https://doi.org/10.48550/arXiv.2406.11856"
+    "venue": "Vand. J. Ent. & Tech. L.",
+    "type": "journal",
+    "url": "https://doi.org/10.48550/arxiv.2406.11856"
   },
   {
     "year": 2024,
@@ -323,9 +292,8 @@
     "year": 2024,
     "title": "Legal, Technical, and Social Limitations of Data Portability through Decentralized Applications",
     "authors": "Y. Chao, M. Xu, A. Tamò-Larrieux, K. Garcia, K. Kollnig",
-    "venue": "Solid Symposium (SoSy)",
+    "venue": "Solid Symposium 2024",
     "type": "conference",
-    "url": "https://ceur-ws.org/Vol-3947/short12.pdf",
     "projects": [
       "regtech4ai"
     ]
@@ -333,10 +301,10 @@
   {
     "year": 2024,
     "title": "Leveraging GPT for the Generation of Multi-Platform Social Media Datasets for Research",
-    "authors": "H. Tari, D. Khan, J. Rutten, D. Othman, R. Kaushal, T. Bertaglia, A. Iamnitchi",
-    "venue": "arXiv",
-    "type": "preprint",
-    "url": "https://doi.org/10.48550/arxiv.2407.08323",
+    "authors": "H. Tari, M. D. Khan, J. Rutten, D. Othman, T. Bertaglia, R. Kaushal, A. Iamnitchi",
+    "venue": "ACM Conference on Hypertext and Social Media (HT)",
+    "type": "conference",
+    "url": "https://doi.org/10.1145/3648188.3675153",
     "projects": [
       "cocoda"
     ]
@@ -347,7 +315,7 @@
     "authors": "K. Kollnig, L. Zhang, J. Zhao, N. Shadbolt",
     "venue": "Computer Law & Security Review",
     "type": "journal",
-    "url": "https://doi.org/10.1016/j.clsr.2024.106041"
+    "url": "https://doi.org/10.2139/ssrn.4565608"
   },
   {
     "year": 2024,
