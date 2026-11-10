@@ -1,7 +1,7 @@
 [
   {
     "year": 2026,
-    "title": "\" If I Had to Buy Just ONE: Galaxy S26 Ultra\": Auditing AI-Generated Product Recommendations",
+    "title": "\"If I Had to Buy Just ONE: Galaxy S26 Ultra\": Auditing AI-Generated Product Recommendations",
     "authors": "L. Marin, T. Bertaglia, G. Astante, B. Rijsbosch, G. van Dijck, A. Hannák, ..., et al.",
     "venue": "arXiv",
     "type": "preprint",
@@ -14,8 +14,8 @@
     "year": 2026,
     "title": "Building AI (In)dependence through EU's AI Factories",
     "authors": "D. Halil, B. Rijsbosch, K. Kollnig",
-    "venue": "SSRN",
-    "type": "preprint",
+    "venue": "Computer Law & Security Review",
+    "type": "journal",
     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6725720",
     "projects": [
       "regtech4ai"
@@ -105,9 +105,9 @@
     "year": 2026,
     "title": "Measuring Privacy vs. Fidelity in Synthetic Social Media Datasets",
     "authors": "H. Tari, A. Iamnitchi",
-    "venue": "arXiv",
-    "type": "preprint",
-    "url": "https://doi.org/10.48550/arxiv.2603.03906",
+    "venue": "ACM Web Science Conference (WebSci)",
+    "type": "conference",
+    "url": "https://doi.org/10.1145/3795766.3799752",
     "projects": [
       "cocoda"
     ]
@@ -178,7 +178,7 @@
   {
     "year": 2025,
     "title": "Are Companies Taking AI Risks Seriously? A Systematic Analysis of Companies' AI Risk Disclosures in SEC 10-K forms",
-    "authors": "L. Marin, B. Rijsbosch, G. Spanakis, K. Kollnig",
+    "authors": "L. Uberti-Bona Marin, B. Rijsbosch, G. Spanakis, K. Kollnig",
     "venue": "PKDD/ECML Workshops",
     "type": "conference",
     "url": "https://doi.org/10.1007/978-3-032-19096-3_6",
@@ -268,13 +268,6 @@
   },
   {
     "year": 2024,
-    "title": "From ad identifiers to global privacy control: The status quo and future of opting out of ad tracking on Android",
-    "authors": "S. Zimmeck, N. Aggarwal, Z. Liu, K. Kollnig",
-    "venue": null,
-    "type": "journal"
-  },
-  {
-    "year": 2024,
     "title": "Google's Chrome Antitrust Paradox",
     "authors": "S. Munir, K. Kollnig, A. Shuba, Z. Shafiq",
     "venue": "Vand. J. Ent. & Tech. L.",
@@ -325,6 +318,17 @@
     "venue": "NYU Journal of Intellectual Property & Entertainment Law",
     "type": "journal",
     "url": "https://doi.org/10.2139/ssrn.4899219"
+  },
+  {
+    "year": 2024,
+    "title": "The Impact of the EU AI Act on the Financial Services Industry",
+    "authors": "S. Sieniewicz, K. Szostak",
+    "venue": "Finance and Capital Markets (formerly Derivatives & Financial Instruments)",
+    "type": "journal",
+    "url": "https://doi.org/10.59403/2czzh3x",
+    "projects": [
+      "regtech4ai"
+    ]
   },
   {
     "year": 2024,
